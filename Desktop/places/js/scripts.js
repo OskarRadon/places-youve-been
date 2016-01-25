@@ -15,11 +15,11 @@ $(document).ready(function() {
     var city = $("input#new-city").val();
     var country = $("input#new-country").val();
     var landmark = $("input#new-landmark").val();
-    var newPlace = new Place(city, country);
+    var newPlace = new Place(city, country, landmark);
 
     $("ul#places").append("<li><span class='fullPlace'>" + newPlace.fullPlace() + "</span></li>");
 
-    $(".contact").last().click(function() {
+    $("#places").last().click(function() {
       $("#show-places").show();
       $("#show-places h2").text(newPlace.fullPlace());
       $(".city").text(newPlace.city);
