@@ -7,10 +7,3 @@ describe ("Place", function(){
   });
 
 });
-
-$(function (){
-  $("form#place").submit(function(event){
-    event.preventDefault;
-    
-  });
-});
